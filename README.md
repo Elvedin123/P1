@@ -1,11 +1,11 @@
-Before you start any actual coding, you must meet with your Squad Leader for ~10 minutes to get your app idea approved. Prepare the following materials _before_ your meeting and put them in your README.md:
-- **App Title**: The name of your app.
-- **App Description**: What your app will do.
-- **API**: The API you are using and the information you plan to get from it.
-- **API Snippet**: A sample snippet of JSON from a successful GET request you have made to your API using Postman.
-- **Wireframes**:  The proposed layout and design of your app. Create mockups for your views. If your are creating multiple views including both desktop and mobile formats, and consider whether or not you need to account for landscape and portrait orientations. Please use a digital tool to complete your wireframe.
-- **MVP**: A list of features you will need to build in order to meet the Minimum Viable Product. This will be the rubric your project will be graded against.
-- **Post-MVP**: A list of additional/advanced features you would like to include in your app after you have met MVP.
-- **Goals**: What you plan to accomplish for each day of the project week.
-- **Priority Matrix**: A graph of your intended areas of development (Pseudocoding, Design, HTML, CSS, JavaScript, Testing, etc) plotted on an X/Y axis where X represents time to completion and Y represents priority. Use a professional tool or upload a well drawn image using an image hosting site such as [Cloudinary](https://cloudinary.com/) or a similar hosting service.
-- **Timeframes**: How long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day. Components should be broken down into a maximum of 3 hours time blocks.
+
+- **App Title**: 
+- **App Description**: 
+- **API**: 
+- **API Snippet**: 
+- **Wireframes**:  
+- **MVP**: 
+- **Post-MVP**: 
+- **Goals**: 
+- **Priority Matrix**: 
+- **Timeframes**:
