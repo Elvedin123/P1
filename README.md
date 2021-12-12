@@ -3,9 +3,9 @@ PROJECT OVERVIEW
 
 - **App Description**: 
 - **API**: 
-![api image]("./assets/screenshot.png")
+![api image](./assets/screenshot.png)
 - **API Snippet**: 
-![snippets]("./assets/ss2.png")
+![snippets](./assets/ss2.png)
 - **Wireframes**:  
 - **MVP**: 
 - **Post-MVP**: 
