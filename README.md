@@ -3,9 +3,9 @@ PROJECT OVERVIEW
 LEAGUE-O-PEDIA
 - **App Description**: 
 - **API**: 
-![api image](./assets/screenshot.png)
+![api image](./assets/apiimg.png)
 - **API Snippet**: 
-![snippets](./assets/ss2.png)
+![snippets](./assets/apisnippet.png)
 - **Wireframes**:  
 ![wireframelink](https://whimsical.com/EiR7gX8hZgw1B2xqJAsCnS)
 ![wireframephoto](./assets/wireframe.png)
