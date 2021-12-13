@@ -1,7 +1,8 @@
 PROJECT OVERVIEW
 # **App Title**:
-LEAGUE-O-PEDIA
+## LEAGUE-O-PEDIA
 # **App Description**: 
+This LEAGUE-O-PEDIA application allows both new and veteran league of legends enthusiasts to browse through a collection of league of legends champions! This database allows users to find information on their potential favorite Champion! This data includes the name of the champion, title and basic lore to further engage the users interests!
 # **API**: 
 ![api image](./assets/apiimg.png)
 # **API Snippet**: 
@@ -38,7 +39,7 @@ json
 "Fighter",
 "Tank"
 ```
-- **Wireframes**:  
+# **Wireframes**:  
 [wireframelink](https://whimsical.com/EiR7gX8hZgw1B2xqJAsCnS)
 ![wireframephoto](./assets/wireframe.png)
 # **MVP**: 
@@ -48,6 +49,11 @@ json
   - Use a dropdown menu to select Champions for new users
   - Create stylish responsive css design via flexbox to manipulate Champion data appearance
 # **Post-MVP**: 
-# **Goals**: 
+  - create a section that replaces current info and includes the following data below
+  - Show data of Champion abilities from the api
+  - Show Champion ability effects
+  - Show ability sprites from the api
+  
 # **Priority Matrix**: 
+
 # **Timeframes**:
