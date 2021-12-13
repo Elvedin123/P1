@@ -5,14 +5,28 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>LEAGUE-O-PEDIA</title>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"> </script>
   <script defer src="scratch.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 
-<body>
+<header>
+  <h1>LEAGUE-O-PEDIA</h1>
+</header>
 
+<body>
+  <form id="searchForm">
+    <select id="champion-list">
+      <option hidden default selected="false">Select Champion</option>
+    </select>
+    <input type="text" id="input" placeholder="Search for a Champion">
+    <button id="search">Search</button>
+    <section id="data-container">
+      <div id="basic-info"></div>
+    </section>
+    <div id="champion-photo"></div>
 </body>
 
 </html>
