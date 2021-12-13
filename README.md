@@ -1,11 +1,43 @@
 PROJECT OVERVIEW
-- **App Title**:
+# **App Title**:
 LEAGUE-O-PEDIA
-- **App Description**: 
-- **API**: 
+# **App Description**: 
+# **API**: 
 ![api image](./assets/apiimg.png)
-- **API Snippet**: 
-![snippets](./assets/apisnippet.png)
+# **API Snippet**: 
+```
+json
+{
+"type": "champion",
+"format": "standAloneComplex",
+"version": "11.24.1",
+"data": {
+"Aatrox": {
+"version": "11.24.1",
+"id": "Aatrox",
+"key": "266",
+"name": "Aatrox",
+"title": "the Darkin Blade",
+"blurb": "Once honored defenders of Shurima against the Void, Aatrox and his brethren would eventually become an even greater threat to Runeterra, and were defeated only by cunning mortal sorcery. But after centuries of imprisonment, Aatrox was the first to find...",
+"info": {
+"attack": 8,
+"defense": 4,
+"magic": 3,
+"difficulty": 4
+},
+"image": {
+"full": "Aatrox.png",
+"sprite": "champion0.png",
+"group": "champion",
+"x": 0,
+"y": 0,
+"w": 48,
+"h": 48
+},
+"tags": [
+"Fighter",
+"Tank"
+```
 - **Wireframes**:  
 [wireframelink](https://whimsical.com/EiR7gX8hZgw1B2xqJAsCnS)
 ![wireframephoto](./assets/wireframe.png)
@@ -15,7 +47,7 @@ LEAGUE-O-PEDIA
   - Render Champion name, title, image, and lore data from API
   - Use a dropdown menu to select Champions for new users
   - Create stylish responsive css design via flexbox to manipulate Champion data appearance
-- **Post-MVP**: 
-- **Goals**: 
-- **Priority Matrix**: 
-- **Timeframes**:
+# **Post-MVP**: 
+# **Goals**: 
+# **Priority Matrix**: 
+# **Timeframes**:
