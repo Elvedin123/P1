@@ -55,5 +55,7 @@ json
   - Show ability sprites from the api
   
 # **Priority Matrix**: 
+[Priority matrix link](https://whimsical.com/EiR7gX8hZgw1B2xqJAsCnS)
+![Priority matrix image](./assets/prioritymatrix.png)
 
 # **Timeframes**:
