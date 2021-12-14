@@ -43,13 +43,13 @@ json
 [wireframelink](https://whimsical.com/EiR7gX8hZgw1B2xqJAsCnS)
 ![wireframephoto](./assets/wireframe.png)
 # **MVP**: 
-  - Take user input from a search bar to find League Champions
+  - Take user input from a dropdown to find League Champions
   - Call and use data from League of legends API
   - Render Champion name, title, image, and lore data from API
-  - Use a dropdown menu to select Champions for new users
   - Create stylish responsive css design via flexbox to manipulate Champion data appearance
 # **Post-MVP**: 
   - create a section that replaces current info and includes the following data below
+  - implement a search bar with a dropdown to filter options for new and experienced players alike.
   - Show data of Champion abilities from the api
   - Show Champion ability effects
   - Show ability sprites from the api

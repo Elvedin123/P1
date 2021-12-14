@@ -61,5 +61,10 @@ function fetchChampionInfo() {
 function removeData() {
   champData.innerHTML = ""
 }
+function handlerInput() {
+  // let searchValue = searchBar.value;
+  fetchChampionInfo(searchValue);
+}
+inputBtn.addEventListener("click", handlerInput);
 
 champSelector.addEventListener("change", fetchChampionInfo);
