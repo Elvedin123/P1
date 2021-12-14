@@ -2,7 +2,8 @@
 let inputBtn = document.querySelector("#search");
 let searchBar = document.querySelector("#input");
 let section = document.querySelector("#data-container");
-let champSelector = document.querySelector("#champion-select")
+let champSelector = document.querySelector("#champion-select");
+let champData = document.querySelector("#basic-info");
 let button = document.querySelector("#search");
 let champPhoto = document.querySelector("#champion-image");
 // finds all champions
@@ -11,7 +12,7 @@ async function fetchChampions() {
   const res = await axios.get(url);
   // console.log(res)
   let champions = Object.keys(res.data.data)
-  // console.log(champions)
+  console.log(res.data.data)
 
   setChampionValues(champions)
 }
@@ -25,11 +26,14 @@ function setChampionValues(champions) {
     option.textContent = champion;
     champSelector.appendChild(option);
 
+
+
   });
 
 };
 function fetchChampionImages() {
   let champion = champSelector.value;
+  removeData();
   const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
   // const res = await axios.get(url);
   // const image = document.createElement("img");
@@ -37,5 +41,11 @@ function fetchChampionImages() {
   champPhoto.alt = `${champion} splashart`;
   // champPhoto.appendChild(image);
   // console.log(res)
+  let h2 = document.createElement("h2");
+  h2.innerText = `${champion}`;
+  champData.appendChild(h2);
+}
+function removeData() {
+  champData.innerHTML = ""
 }
 champSelector.addEventListener("change", fetchChampionImages)
