@@ -35,7 +35,7 @@ function setChampionValues(champions) {
   });
 
 };
-function fetchChampionImages() {
+function fetchChampionInfo() {
   let champion = champSelector.value;
   // console.log(champSelector)
   let currentChampObj = championObj[champion]
@@ -62,4 +62,4 @@ function removeData() {
   champData.innerHTML = ""
 }
 
-champSelector.addEventListener("change", fetchChampionImages);
+champSelector.addEventListener("change", fetchChampionInfo);
