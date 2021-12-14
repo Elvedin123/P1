@@ -10,9 +10,13 @@ let champPhoto = document.querySelector("#champion-image");
 async function fetchChampions() {
   const url = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion.json`;
   const res = await axios.get(url);
-  // console.log(res)
+  // console.log(res.data.data.Aatrox.title
+
+  // console.log(arr)
   let champions = Object.keys(res.data.data)
-  console.log(res.data.data)
+
+  console.log(champions)
+  // console.log(res.data.data)
 
   setChampionValues(champions)
 }
@@ -27,25 +31,25 @@ function setChampionValues(champions) {
     champSelector.appendChild(option);
 
 
-
   });
 
 };
 function fetchChampionImages() {
   let champion = champSelector.value;
+  // console.log(champSelector)
   removeData();
   const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
-  // const res = await axios.get(url);
-  // const image = document.createElement("img");
+
   champPhoto.src = `${imageUrl}`;
   champPhoto.alt = `${champion} splashart`;
-  // champPhoto.appendChild(image);
-  // console.log(res)
-  let h2 = document.createElement("h2");
-  h2.innerText = `${champion}`;
-  champData.appendChild(h2);
+
+  let h1 = document.createElement("h1")
+  h1.innerText = `${champion}`
+  champData.appendChild(h1);
+
 }
 function removeData() {
   champData.innerHTML = ""
 }
-champSelector.addEventListener("change", fetchChampionImages)
+
+champSelector.addEventListener("change", fetchChampionImages);
