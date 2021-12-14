@@ -1,4 +1,18 @@
 body {
   background-image: url("./assets/league\ web\ background.png");
-  /* display: flex; */
+  display: flex;
+  
+}
+#fleximg{
+  display: flex;
+  width: 500px;
+  border: thin solid white;
+  
+}
+#basic-info{
+  display: flex;
+  padding: 20px;
+}
+#champion-image {
+  width: 50% ;
 }

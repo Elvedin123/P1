@@ -28,14 +28,14 @@ function setChampionValues(champions) {
   });
 
 };
-function fetchChampionImages(champion) {
-  // let champion = champSelector.value;
+function fetchChampionImages() {
+  let champion = champSelector.value;
   const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
   // const res = await axios.get(url);
-  const image = document.createElement("img");
-  image.src = `${imageUrl}`;
-  image.alt = `${champion} splashart`;
-  champPhoto.appendChild(image);
+  // const image = document.createElement("img");
+  champPhoto.src = `${imageUrl}`;
+  champPhoto.alt = `${champion} splashart`;
+  // champPhoto.appendChild(image);
   // console.log(res)
 }
 champSelector.addEventListener("change", fetchChampionImages)
