@@ -2,11 +2,23 @@ body {
   background-image: url("./assets/league\ web\ background.png");
   display: flex;
   flex-direction: column;
-    align-items: center;
+    align-items: center; 
+}
+#titlepg{
+  font-size: 66px;
+  margin-bottom: 100px;
+}
+#logo{
+  position: relative;
+  top: -230px;
+  left: -360px;
+  height: 50px;
+  width: 50px;
 }
 #fleximg{
   display: flex;
   width: 500px;
+
   border: thin solid white;
   
 }
