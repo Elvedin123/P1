@@ -1,7 +1,8 @@
 body {
   background-image: url("./assets/league\ web\ background.png");
   display: flex;
-  
+  flex-direction: column;
+    align-items: center;
 }
 #fleximg{
   display: flex;
