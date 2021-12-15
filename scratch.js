@@ -10,6 +10,7 @@ let championObj = {}
 let abilityImg = document.querySelector(".abilities")
 let abilityName = document.querySelector(".abiname");
 let abilities = document.querySelector("#abilities");
+let abiDescription = document.querySelector(".ability-info")
 // finds all champions
 async function fetchChampions() {
 
@@ -47,7 +48,7 @@ function fetchChampionInfo() {
   let currentChampObj = championObj[champion]
   console.log(currentChampObj)
   removeData();
-
+  // removeText();
   const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
   champPhoto.src = `${imageUrl}`;
   champPhoto.alt = `${champion} splashart`;
@@ -68,7 +69,7 @@ function fetchChampionInfo() {
 
 
   async function fetchNewData() {
-
+    removeText();
     const newChampData = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion/${champion}.json`;
     const res = await axios.get(newChampData);
     let newData = res.data.data
@@ -76,14 +77,15 @@ function fetchChampionInfo() {
     console.log(newName)
     let newChampObj = newData[newName];
     console.log(newChampObj)
-    // removeData()
+    // removeText();
     newChampObj.spells.forEach(spell => {
       console.log(spell.image.full)
 
-      let abiName = spell.name
-      console.log(abiName)
-      let h2 = document.createElement("h1");
-      h2.innerText = abiName
+      let abiName = spell.name;
+      console.log(abiName);
+      let h1 = document.createElement("h1");
+      h1.innerText = abiName;
+      abilityName.appendChild(h1);
       console.log(h2)
       // abilityName.appendChild(h2)
 
@@ -93,6 +95,11 @@ function fetchChampionInfo() {
       abilityImg.appendChild(img)
       console.log(img)
 
+      // let abiDes = spell.description;
+      // let p = document.createElement("p");
+      // p.innerText = abiDes
+      // // console.log(p)
+      // removeText();
     })
     // console.log(res.data.data)
     // championObj = res.data.data;
@@ -107,9 +114,11 @@ function fetchChampionInfo() {
   }
   fetchNewData();
 };
-// function removeText() {
-//   abilityName.innerHTML = ""
-// }
+function removeText() {
+  abilityName.innerHTML = ""
+  abiDescription.innerHTML = ""
+  abilityImg.innerHTML = ""
+}
 function removeData() {
   champData.innerHTML = ""
 }
