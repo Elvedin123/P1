@@ -8,8 +8,11 @@ let button = document.querySelector("#search");
 let champPhoto = document.querySelector("#champion-image");
 let championObj = {}
 let abilityImg = document.querySelector(".abilities")
+let abilityName = document.querySelector(".abiname");
+let abilities = document.querySelector("#abilities");
 // finds all champions
 async function fetchChampions() {
+
 
   const url = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion.json`;
   const res = await axios.get(url)
@@ -73,13 +76,16 @@ function fetchChampionInfo() {
     console.log(newName)
     let newChampObj = newData[newName];
     console.log(newChampObj)
-
+    // removeData()
     newChampObj.spells.forEach(spell => {
       console.log(spell.image.full)
+
       let abiName = spell.name
-      // console.log(abiName)
-      let h1 = document.createElement("h1");
-      // console.log(h1)
+      console.log(abiName)
+      let h2 = document.createElement("h1");
+      h2.innerText = abiName
+      console.log(h2)
+      // abilityName.appendChild(h2)
 
       let imgLink = spell.image.full
       let img = document.createElement("img")
@@ -101,6 +107,9 @@ function fetchChampionInfo() {
   }
   fetchNewData();
 };
+// function removeText() {
+//   abilityName.innerHTML = ""
+// }
 function removeData() {
   champData.innerHTML = ""
 }
