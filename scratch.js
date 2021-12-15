@@ -7,10 +7,11 @@ let champData = document.querySelector("#basic-info");
 let button = document.querySelector("#search");
 let champPhoto = document.querySelector("#champion-image");
 let championObj = {}
+let abilityImg = document.querySelector(".abilities")
 // finds all champions
 async function fetchChampions() {
 
-  const url = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion/Aatrox.json`;
+  const url = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion.json`;
   const res = await axios.get(url);
   console.log(res.data.data)
   championObj = res.data.data;
@@ -60,6 +61,45 @@ function fetchChampionInfo() {
   let p = document.createElement("p");
   p.innerText = currentChampObj.blurb;
   champData.appendChild(p);
+
+
+
+  async function fetchNewData() {
+
+    const newChampData = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion/${champion}.json`;
+    const res = await axios.get(newChampData);
+    let newData = res.data.data
+    let newName = Object.keys(newData)[0]
+    console.log(newName)
+    let newChampObj = newData[newName];
+    console.log(newChampObj)
+
+    newChampObj.spells.forEach(spell => {
+      console.log(spell.image.full)
+      let abiName = spell.name
+      // console.log(abiName)
+      let h1 = document.createElement("h1");
+      // console.log(h1)
+
+      let imgLink = spell.image.full
+      let img = document.createElement("img")
+      img.src = `http://ddragon.leagueoflegends.com/cdn/11.24.1/img/spell/${imgLink}`
+      abilityImg.appendChild(img)
+      console.log(img)
+
+    })
+    // console.log(res.data.data)
+    // championObj = res.data.data;
+    // console.log(arr)
+    // let newData = res.data.data
+    // console.log(newData)
+    // console.log(champions)
+    // console.log(res.data.data)
+
+
+
+  }
+  fetchNewData();
 };
 function removeData() {
   champData.innerHTML = ""
