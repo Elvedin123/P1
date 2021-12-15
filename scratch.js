@@ -80,26 +80,31 @@ function fetchChampionInfo() {
     // removeText();
     newChampObj.spells.forEach(spell => {
       console.log(spell.image.full)
+      let spellcard = document.createElement("div");
+      spellcard.classList.add("spellcard");
 
       let abiName = spell.name;
       console.log(abiName);
       let h1 = document.createElement("h1");
       h1.innerText = abiName;
-      abilityName.appendChild(h1);
-      console.log(h2)
+      spellcard.appendChild(h1);
+      console.log(h1)
       // abilityName.appendChild(h2)
 
-      let imgLink = spell.image.full
+      let imgLink = spell.image.full;
+      console.log(imgLink)
       let img = document.createElement("img")
       img.src = `http://ddragon.leagueoflegends.com/cdn/11.24.1/img/spell/${imgLink}`
-      abilityImg.appendChild(img)
+      spellcard.appendChild(img)
       console.log(img)
 
       let abiDes = spell.description;
       let p = document.createElement("p");
       p.innerText = abiDes
-      abiDescription.appendChild(p)
+      spellcard.appendChild(p)
       console.log(p)
+
+      abilities.appendChild(spellcard);
 
     })
     // console.log(res.data.data)
@@ -130,3 +135,5 @@ function handlerInput() {
 inputBtn.addEventListener("click", handlerInput);
 
 champSelector.addEventListener("change", fetchChampionInfo);
+
+
