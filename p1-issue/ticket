@@ -1,0 +1,14 @@
+name	about	title	labels	assignees
+P1 Issue
+Fill this out for issue help
+
+the previous champion api contained only a brief set of data but if i want to access spells and other
+attributes i am currently on another link and am struggling getting the champion specific data
+without having to call the actual champion.
+
+champion not defined
+
+2 Links you found while researching the bug
+
+-https://stackoverflow.com/questions/48748372/passing-path-parameters-in-axios
+-https://www.codegrepper.com/code-examples/javascript/frameworks/dist/axios.get+query+params

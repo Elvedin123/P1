@@ -9,7 +9,8 @@ let champPhoto = document.querySelector("#champion-image");
 let championObj = {}
 // finds all champions
 async function fetchChampions() {
-  const url = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion.json`;
+
+  const url = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion/Aatrox.json`;
   const res = await axios.get(url);
   console.log(res.data.data)
   championObj = res.data.data;
@@ -20,6 +21,7 @@ async function fetchChampions() {
   // console.log(res.data.data)
 
   setChampionValues(champions)
+
 }
 fetchChampions();
 // sets champion values
@@ -39,10 +41,10 @@ function fetchChampionInfo() {
   let champion = champSelector.value;
   // console.log(champSelector)
   let currentChampObj = championObj[champion]
-  // console.log(currentChampObj)
+  console.log(currentChampObj)
   removeData();
-  const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
 
+  const imageUrl = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_0.jpg`;
   champPhoto.src = `${imageUrl}`;
   champPhoto.alt = `${champion} splashart`;
 
