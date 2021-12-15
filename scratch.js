@@ -52,6 +52,7 @@ function fetchChampionInfo() {
   // console.log(championObj)
   let h2 = document.createElement("h2");
   h2.innerText = currentChampObj.title;
+  h2.style.fontStyle = "italic"
   champData.appendChild(h2);
 
   let p = document.createElement("p");
@@ -62,7 +63,7 @@ function removeData() {
   champData.innerHTML = ""
 }
 function handlerInput() {
-  // let searchValue = searchBar.value;
+  let searchValue = searchBar.value;
   fetchChampionInfo(searchValue);
 }
 inputBtn.addEventListener("click", handlerInput);
