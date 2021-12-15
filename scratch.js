@@ -95,11 +95,12 @@ function fetchChampionInfo() {
       abilityImg.appendChild(img)
       console.log(img)
 
-      // let abiDes = spell.description;
-      // let p = document.createElement("p");
-      // p.innerText = abiDes
-      // // console.log(p)
-      // removeText();
+      let abiDes = spell.description;
+      let p = document.createElement("p");
+      p.innerText = abiDes
+      abiDescription.appendChild(p)
+      console.log(p)
+
     })
     // console.log(res.data.data)
     // championObj = res.data.data;
