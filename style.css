@@ -1,25 +1,38 @@
+*{
+  margin: 0;
+}
 body {
   background-image: url("./assets/league\ web\ background.png");
   display: flex;
   flex-direction: column;
     align-items: center; 
 }
+
+
 #titlepg{
+  width: 100%;
+  background-color: cadetblue;
+}
+.titlepg{
   font-size: 66px;
-  margin-bottom: 100px;
+  font-family: Friz;
+  margin-bottom: 25px;
+  text-align: center;
 }
 #logo{
-  position: relative;
-  left: -600px;
-  top: -230px;
+  position: absolute;
+  
 }
 .logo{
-  width: 100px;
+  width: 106px;
+}
+#form{
+  margin-top: 20px;
 }
 #flexinfo{
   display: flex;
   width: 700px;
-  margin-top: 100px;
+  margin-top: px;
   border: thin solid white;
   
 }
