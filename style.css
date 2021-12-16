@@ -1,4 +1,4 @@
-@media screen and (min-width: 420px){
+
 *{
   margin: 0;
 }
@@ -75,26 +75,77 @@ body {
 .spellcard p{
   padding: 10px;
 }
-}
-@media screen and (max-width: 420px){
+
+
+
+/* ----------------------------------------------------- */
+/* ---------------------phone display------------------- */
+@media only screen and (max-width: 420px){
+  *{
+    margin: 0;
+  }
+  body {
+    background-image: url("./assets/league\ web\ background.png");
+    display: flex;
+    flex-direction: column;
+      align-items: center; 
+  }
   #titlepg{
-    width: 100%;
+    width: 100vw;
     background-color: rgba(255,255,255, 0.7);
+    
   }
   .titlepg{
     font-size: 30px;
     font-family: Friz;
     margin-bottom: 25px;
     text-align: center;
+    padding-top: 25px;
   }
   #logo{
-    position: absolute;
+    position: absolute; 
     
   }
   .logo{
-    width: 106px;
+    width:30px
   }
 }
-
-
-
+#form{
+  margin-top: 20px;
+}
+#flexinfo{
+  display: flex;
+  width: 90vw;
+  margin-top: 20px;
+  border: thin solid rgba(255,255,255, 0.7);
+  flex-direction: column;
+}
+#basic-info{
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255,255,255, 0.7)
+}
+#champion-image {
+  width: 100% ;
+}
+.spellcard{
+  display: flex;
+  background-color: rgba(255,255,255, 0.7);
+  height: 200px;
+  width: 90vw;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: thin solid black;
+  margin: 5px;
+}
+.spellcard img{
+  width: 100px;
+}
+.spellcard p{
+  padding: 10px;
+}
+}
