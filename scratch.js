@@ -11,6 +11,7 @@ let abilityImg = document.querySelector(".abilities")
 let abilityName = document.querySelector(".abiname");
 let abilities = document.querySelector("#abilities");
 let abiDescription = document.querySelector(".ability-info")
+// let spellcard = document.querySelector(".spellcard")
 // finds all champions
 async function fetchChampions() {
 
@@ -121,9 +122,7 @@ function fetchChampionInfo() {
   fetchNewData();
 };
 function removeText() {
-  abilityName.innerHTML = ""
-  abiDescription.innerHTML = ""
-  abilityImg.innerHTML = ""
+  abilities.innerHTML = ""
 }
 function removeData() {
   champData.innerHTML = ""
