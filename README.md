@@ -61,15 +61,15 @@ json
 # **Timeframes**:
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Basic HTML setup| H | 2hrs|  |  |
-| Retreive date from API | H | 4hrs|  | |
-| Incorporate API info to DOM| H | 6-7hrs| | |
-| Create form, dropdown list, and add submit/click listener| H | 4hrs | | |
-| Create dropdown menu for list of objects| H | 3-4hrs| | |
-| Debugging API information and submit/click function| M | 3hrs | | |
-| Set background image, style html, and buttons/dropdown boxes| H | 3hrs| ||
-| CSS flexbox styling| H | 4hrs| | |
-| Media query for different size screens| H | 3hrs| | |
-| Cleaning and refactoring code| M | 3hr| | |
-| Styling of new additional information| L | 4hrs| | |
+| Basic HTML setup| H | 2hrs| 3hrs |  |
+| Retreive date from API | H | 4hrs| 6hrs | |
+| Incorporate API info to DOM| H | 6-7hrs| 5hrs| |
+| Create form, dropdown list, and add submit/click listener| H | 4hrs |2hrs | |
+| Create dropdown menu for list of objects| H | 3-4hrs| 2hrs| |
+| Debugging API information and submit/click function| M | 3hrs | 2hrs| |
+| Set background image, style html, and buttons/dropdown boxes| H | 3hrs| 6hrs||
+| CSS flexbox styling| H | 4hrs| 6hrs | |
+| Media query for different size screens| H | 3hrs| 1hr | |
+| Cleaning and refactoring code| M | 3hr|3hrs | |
+| Styling of new additional information| L | 4hrs| 2hrs| |
 |Total:| | 39-41hrs| | |
