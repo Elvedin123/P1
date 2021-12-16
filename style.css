@@ -1,3 +1,4 @@
+@media screen and (min-width: 420px){
 *{
   margin: 0;
 }
@@ -74,3 +75,26 @@ body {
 .spellcard p{
   padding: 10px;
 }
+}
+@media screen and (max-width: 420px){
+  #titlepg{
+    width: 100%;
+    background-color: rgba(255,255,255, 0.7);
+  }
+  .titlepg{
+    font-size: 30px;
+    font-family: Friz;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  #logo{
+    position: absolute;
+    
+  }
+  .logo{
+    width: 106px;
+  }
+}
+
+
+
