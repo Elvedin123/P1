@@ -16,7 +16,7 @@ let abiDescription = document.querySelector(".ability-info")
 async function fetchChampions() {
 
 
-  const url = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion.json`;
+  const url = `https://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion.json`;
   const res = await axios.get(url)
   console.log(res.data.data)
   championObj = res.data.data;
@@ -71,7 +71,7 @@ function fetchChampionInfo() {
 
   async function fetchNewData() {
     removeText();
-    const newChampData = `http://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion/${champion}.json`;
+    const newChampData = `https://ddragon.leagueoflegends.com/cdn/11.24.1/data/en_US/champion/${champion}.json`;
     const res = await axios.get(newChampData);
     let newData = res.data.data
     let newName = Object.keys(newData)[0]
@@ -95,7 +95,7 @@ function fetchChampionInfo() {
       let imgLink = spell.image.full;
       console.log(imgLink)
       let img = document.createElement("img")
-      img.src = `http://ddragon.leagueoflegends.com/cdn/11.24.1/img/spell/${imgLink}`
+      img.src = `https://ddragon.leagueoflegends.com/cdn/11.24.1/img/spell/${imgLink}`
       spellcard.appendChild(img)
       console.log(img)
 
