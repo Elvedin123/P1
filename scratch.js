@@ -134,5 +134,3 @@ function handlerInput() {
 inputBtn.addEventListener("click", handlerInput);
 
 champSelector.addEventListener("change", fetchChampionInfo);
-
-
