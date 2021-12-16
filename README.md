@@ -72,4 +72,4 @@ json
 | Media query for different size screens| H | 3hrs| 1hr | |
 | Cleaning and refactoring code| M | 3hr|3hrs | |
 | Styling of new additional information| L | 4hrs| 2hrs| |
-|Total:| | 39-41hrs| | |
+|Total:| | 39-41hrs|38hrs | |
