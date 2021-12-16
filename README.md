@@ -73,3 +73,6 @@ json
 | Cleaning and refactoring code| M | 3hr|3hrs | |
 | Styling of new additional information| L | 4hrs| 2hrs| |
 |Total:| | 39-41hrs|38hrs | |
+
+# **Web URL**:
+[LEAGUE-O-PEDIA](https://elvedin123.github.io/P1/)
